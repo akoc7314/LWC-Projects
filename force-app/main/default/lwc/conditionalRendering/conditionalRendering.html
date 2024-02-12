@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Conditional Rendering" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                type="checkbox"
+                label="Show Hidden Text"
+                onchange={handleChange}></lightning-input>
+                <div lwc:if={isShowed}>
+                    <p>Lets play hide and seek</p>
+                </div>
+        </div>
+    </lightning-card>
+</template>
